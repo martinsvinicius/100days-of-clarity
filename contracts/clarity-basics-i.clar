@@ -1,30 +1,23 @@
+;; Clarity Basics 1
+;; Day 3 - Booleans  & Read-Only
+;; Here we're to review the very basics of Clarity
 
-;; title: clarity-basics-i
-;; version:
-;; summary:
-;; description:
+(define-read-only (hello-world)
+  (print "Hello World!")
+)
 
-;; traits
-;;
+(define-read-only (show-true-i)
+  true
+)
 
-;; token definitions
-;;
+(define-read-only (show-true-ii)
+  (not false)
+)
 
-;; constants
-;;
+(define-read-only (show-false-i)
+  false
+)
 
-;; data vars
-;;
-
-;; data maps
-;;
-
-;; public functions
-;;
-
-;; read only functions
-;;
-
-;; private functions
-;;
-
+(define-read-only (show-false-ii)
+  (not true)
+)
